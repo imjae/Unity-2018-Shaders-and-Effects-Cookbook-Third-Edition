@@ -202,12 +202,12 @@ MonoBehaviour:
     m_Bits: 256
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 0
+  antialiasingMode: 1
   temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
+    jitterSpread: 1
+    sharpness: 3
+    stationaryBlending: 0.99
+    motionBlending: 0.99
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 1800195003}
   - component: {fileID: 1800195002}
   - component: {fileID: 1800195001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Post-process Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -739,7 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: b2750ccce0ae695419cc29ccc72b757e, type: 2}
+  sharedProfile: {fileID: 11400000, guid: c9d853461d9716d42be992c9ec2f2266, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
